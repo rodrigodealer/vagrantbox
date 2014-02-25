@@ -1,0 +1,33 @@
+{
+  "types": [
+
+  ],
+  "license": "Apache 2.0",
+  "source": "git://github.com/thias/puppet-nginx",
+  "description": "Install, enable and configure an NGINX web server instance.",
+  "version": "0.1.8",
+  "summary": "NGINX web server module",
+  "name": "thias-nginx",
+  "checksums": {
+    "manifests/init.pp": "87715f12b018b46128087d53acb45945",
+    "manifests/file.pp": "86846533c3a05af791f02ea0474aa931",
+    "Modulefile": "019ec89186f789300debb2d276d5960b",
+    "templates/nginx.conf.orig": "fcd397a5c84594c1478a5403048e7ba2",
+    "manifests/params.pp": "3f1f935dc715ca69ee0064ea0d49bff4",
+    "templates/mime.types.erb": "5465370925ffdade54984b251bb58e19",
+    "files/php.conf.inc": "021b2aa24aa4edbcff23997106673ed7",
+    "tests/file.pp": "5aeec3105dcaf6ec9a01470d22d85b93",
+    "ChangeLog": "3c14e48ca4b219b4bda1a8346298a1e3",
+    "tests/init.pp": "c0e7a30798dae942957dd3f6ca864246",
+    "templates/mime.types.orig": "32f74f0ecab0619706688918375c1fd7",
+    "README.md": "26126f5cb0965335328918da3af714d1",
+    "files/php-to-index.conf.inc": "fbf56e0b2143df6759a50f5b0416d2da",
+    "templates/nginx.conf.erb": "6e1854a9b63aabcd56f21d251dd2714d",
+    "LICENSE": "99219472697a01561e7630d63aaecdc1"
+  },
+  "author": "Matthias Saou",
+  "dependencies": [
+
+  ],
+  "project_page": "https://github.com/thias/puppet-nginx"
+}

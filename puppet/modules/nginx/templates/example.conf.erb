@@ -1,0 +1,15 @@
+# Fix for "upstream sent too big header ..." errors
+fastcgi_buffers 8 8k;
+fastcgi_buffer_size 8k;
+upstream fpmbackend {
+  server unix:/var/run/php-fpm-www.sock;
+}
+# Main virtualhost
+server {
+  listen 80;
+  server_name www.example.com;
+  root /var/www/www.example.com;
+  include /etc/nginx/conf.d/php.conf.inc;
+  access_log /var/log/nginx/www.example.com-access.log main;
+  error_log /var/log/nginx/www.example.com-error.log;
+}
